@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOHAN</title>
+    <link rel="stylesheet" href="Fellowship.css">
+    <link rel="stylesheet" href="ghcmd.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-around shadow-lg mx-auto p-4">
+            <a href="#" class="flex items-center">
+                <img class="log1" src="./images/yohanlogo.svg" alt="" />
+            </a>
+            <button data-collapse-toggle="navbar-dropdown" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-dropdown" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                <ul
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="Landingpage.html"
+                            class="block py-2 pl-3 pr-4 text-black rounded md:bg-transparent md:p-0 md:dark:text-green-400 dark:bg-blue-600 md:dark:bg-transparent"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                            class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-400  md:p-0 md:w-auto dark:text-white md:dark:hover:text-green-400 text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Who
+                            We Are
+                            <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar"
+                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            <ul class="py-2  text-sm text-gray-700 dark:text-gray-400"
+                                aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="Aboutus.html"
+                                        class="block px-4 py-2 hover:bg-green-300 dark:hover:bg-gray-600 dark:hover:text-white">About
+                                        Us</a>
+                                </li>
+                                <li>
+                                    <a href="Theteam.html"
+                                        class="block px-4 py-2 hover:bg-green-300 dark:hover:bg-gray-600 dark:hover:text-white">The
+                                        Team</a>
+                                </li>
+                                <li>
+                                    <a href="Theboard.html"
+                                        class="block px-4 py-2 hover:bg-green-300 dark:hover:bg-gray-600 dark:hover:text-white">The
+                                        Board</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1"
+                            class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-400  md:p-0 md:w-auto dark:text-white md:dark:hover:text-green-400 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Programs
+                            <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar1"
+                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                                aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="Bi-annual-summit.html"
+                                        class="block px-4 py-2 hover:bg-green-300 dark:hover:bg-gray-600 dark:hover:text-white">Bi-Annual
+                                        Programs</a>
+                                </li>
+                                <li>
+                                    <a href="ghcmd.html"
+                                        class="block px-4 py-2 hover:bg-green-300 dark:hover:bg-gray-600 dark:hover:text-white">Global
+                                        Health Change Makers Dialogue </a>
+                                </li>
+                                <li>
+                                    <a href="Fellowship.html"
+                                        class="block px-4 py-2 hover:bg-green-300 dark:hover:bg-gray-600 dark:hover:text-white">Fellowship
+                                        Programs</a>
+                                </li>
+                                <li>
+                                    <a href="hlsh.html"
+                                        class="block px-4 py-2 hover:bg-green-300 dark:hover:bg-gray-600 dark:hover:text-white">Advocacy
+                                        for Healthy Liver and Sexual Health </a>
+                                </li>
+                                <li>
+                                    <a href="Save-a-breast.html"
+                                        class="block px-4 py-2 hover:bg-green-300 dark:hover:bg-gray-600 dark:hover:text-white">Save
+                                        A Breast Campaign</a>
+                                </li>
+                                <li>
+                                    <a href="Safe-space.html"
+                                        class="block px-4 py-2 hover:bg-green-300 dark:hover:bg-gray-600 dark:hover:text-white">Safe
+                                        Space Nigeria</a>
+                                </li>
+                                <li>
+                                    <a href="Syn-x.html"
+                                        class="block px-4 py-2 hover:bg-green-300 dark:hover:bg-gray-600 dark:hover:text-white">SYN-X
+                                        Project</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink2" data-dropdown-toggle="dropdownNavbar2"
+                            class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-400 md:p-0 md:w-auto dark:text-white md:dark:hover:text-green-400  dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Resources
+                            <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar2"
+                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                                aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="Blog.html"
+                                        class="block px-4 py-2 hover:bg-green-300 dark:hover:bg-gray-600 dark:hover:text-white">Our
+                                        blog</a>
+                                </li>
+                                <li>
+                                    <a href="Podcast.html"
+                                        class="block px-4 py-2 hover:bg-green-300 dark:hover:bg-gray-600 dark:hover:text-white">Podcast</a>
+                                </li>
+                                <li>
+                                    <a href="Trainings.html"
+                                        class="block px-4 py-2 hover:bg-green-300 dark:hover:bg-gray-600 dark:hover:text-white">Trainings</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink3" data-dropdown-toggle="dropdownNavbar3"
+                            class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-400 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Research
+                            Institute
+                            <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar3"
+                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                                aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="faculty.html"
+                                        class="block px-4 py-2 hover:bg-green-300 dark:hover:bg-gray-600 dark:hover:text-white">Faculty</a>
+                                </li>
+                                <li>
+                                    <a href="Article.html"
+                                        class="block px-4 py-2 hover:bg-green-300 dark:hover:bg-gray-600 dark:hover:text-white">Publications</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="membership.html"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-400  md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Join Us</a>
+                    </li>
+                    <li>
+                        <a href="Contact.html"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-400  md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    </li>
+                    <li>
+                        <a href="Donate.html"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><button
+                                class="bg-green-400 p-2 rounded text-xs">Donate Now</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <div class="grid grid-cols-2 px-36 ">
+            <div class="ml-10">
+                <h1 class="text-green-400 mt-32 font-bold text-3xl">Fellowship Program</h1><br>
+                <p class="tt text-xs">This is a program reserved for exceptional network members who undergo <br>
+                    incubation to train them on successfully leading transformational change <br> through non-profit
+                    work and social entrepreneurship</p>
+                <div class="mt-5">
+                    <button class="text-xs text-white bg-green-400 h-7 rounded w-28">Join Us</button>
+                </div>
+            </div>
+            <div>
+                <img class="h-80 mt-20 ml-10" src="./images/CEEC Model.svg" alt="">
+            </div>
+        </div>
+        <div class="flex mt-10">
+            <span class="yel h-3 w-full"></span>
+            <span class="blue h-3 w-full"></span>
+            <span class="green h-3 w-full"></span>
+        </div>
+        <div>
+            <div class="grid grid-cols-2 px-44 mt-20">
+                <div>
+                    <img class="w-96" src="./images/Frame 4.svg" alt="">
+                </div>
+                <div class="mt-24">
+                    <h1 class="font-bold text-2xl">Multiplying <span class="text-green-400">Impact</span></h1><br>
+                    <p class="tt text-xs">These young people are empowered with knowledge, skills, grants and <br>
+                        mentorship to successfully start and sustain platforms that improve lives and <br> foster
+                        development through innovation in healthcare. It is a crucial aspect of <br> the organisation's
+                        sustainability idea and a major impact amplification strategy.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 px-44 mt-20">
+                <div>
+                    <h1 class="font-bold text-2xl">Key Objectives</h1><br>
+                    <div>
+                        <p class="text-xs tt">Lessen the burden of disease in Africa and improve <br> healthcare access
+                            through innovation </p><br>
+                        <p class="text-xs tt">Increase the capacity of young people to be key players <br> in
+                            revolutionising the health systems in Africa </p><br>
+                        <p class="text-xs tt">Nurture disruptive ideas and usher in an era of collective</p><br>
+                        <p class="text-xs tt">Leverage digital technology, artificial intelligence and <br> other new
+                            generation innovation which young people <br> are drawn to, towards improving existing
+                            systems and <br> building new ones. </p><br>
+                        <p class="text-xs tt">Solve a major problem of initial startup capital needed <br> to build
+                            credibility, proof of concept and <br> viable products where applicable.</p>
+                    </div>
+                </div>
+                <div>
+                    <img class="w-96" src="./images/Frame 5.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <hr class="mt-20 h-1 bg-green-400 w-full">
+        <div class="bbb grid grid-cols-2 px-36 mt-10">
+            <div class="mt-20">
+                <h1 class="text-2xl font-bold">Sponsorship</h1><br>
+                <p>You can sponsor an exceptional young person to make a <br> difference towards innovatively improving
+                    healthcare <br> access to especially underserved populations in Africa.</p><br>
+                <p class="text-xs tt">Send an email to:</p><br>
+                <button class="w-48 ts text-white h-8 bg-green-400 rounded">fellowships@yohanafrica.org</button>
+                <p class="text-xs tt">or</p>
+                <button
+                    class="w-48 ts mt-2 text-white h-8 bg-green-400 rounded">executivedirector@yohanafrica.org</button>
+            </div>
+            <div class="mt-20">
+                <img class="w-96" src="./images/frame2.svg" alt="">
+            </div>
+        </div>
+        <div class="mt-28" id="con4">
+            <div class="grid md:grid-cols-2 p-full ml-96 w-50 object-center m-auto">
+                <div class="mt-20 relative">
+                    <h3 class="text-white text-3xl font-bold font-sans text-center">
+                        Subscribe to Our Newsletter
+                    </h3><br>
+                    <span>
+                        <p class="text-white text-xs ml-20">Sign up for our email newsletter and get updated on our</p>
+                        <p class="text-white text-xs ml-40">special community activities </p>
+                    </span>
+                </div>
+            </div> <br>
+            <div class="flex justify-center">
+                <input type="text"
+                    class="w-75 p-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="Enter your text here">
+                <button
+                    class="bg-blue-500 hover:bg-green-400 text-white font-bold py-2 px-4 rounded-r-lg focus:outline-none focus:ring-2 focus:ring-blue-500">Submit</button>
+            </div>
+        </div>
+        <footer class="foot dark:bg-gray-900">
+            <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 flex flex-wrap justify-center">
+                <div class="flex-1">
+                    <img src="./images/yohanlogo.svg" alt="Logo" class="h-10 ml-7 mb-20 relative">
+                </div>
+                <div class="flex-1">
+                    <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">YOHAN Africa</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4 text-white text-xs">
+                            <a href="Aboutus.html" class="hover:text-green-400">About Us</a>
+                        </li>
+                        <li class="text-white text-xs">
+                            <a href="https://tailwindcss.com/" class="hover:text-green-400">Our Team</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-1">
+                    <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Programs</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4 text-white text-xs">
+                            <a href="Bi-annual-summit.html" class="hover:text-green-400">Bi-Annual Summit</a>
+                        </li>
+                        <li class="mb-4 text-white text-xs">
+                            <a href="Fellowship.html" class="hover:text-green-400">Fellowship Program</a>
+                        </li>
+                        <li class="mb-4 text-white text-xs">
+                            <a href="ghcmd.html" class="hover:text-green-400">Global Health Change Makers <br>
+                                Dialogue</a>
+                        </li>
+                        <li class="mb-4 text-white text-xs">
+                            <a href="hlsh.html" class="hover:text-green-400">Advocacy for Healthy Liver and <br> Sexual
+                                Health</a>
+                        </li>
+                        <li class="mb-4 text-white text-xs">
+                            <a href="Save-a-breast.html" class="hover:text-green-400">Save a Breast Campaign</a>
+                        </li>
+                        <li class="mb-4 text-white text-xs">
+                            <a href="Safe-space.html" class="hover:text-green-400">Safe Space</a>
+                        </li>
+                        <li class="mb-4 text-white text-xs">
+                            <a href="Syn-x.html" class="hover:text-green-400">Syn-X Projects</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-1">
+                    <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Resources</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4 text-white text-xs">
+                            <a href="Blog.html" class="hover:text-green-400">Blog</a>
+                        </li>
+                        <li class="text-white text-xs ">
+                            <a href="Podcast.html" class="hover:text-green-400">Podcast</a>
+                        </li>
+                        <li class="mt-3 text-white text-xs">
+                            <a href="Trainings.html" class="hover:text-green-400">Trainings</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Research Institute</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4 text-white text-xs">
+                            <a href="institute.html" class="hover:text-green-400">About</a>
+                        </li>
+                        <li class="mt-3 text-white text-xs">
+                            <a href="faculty.html" class="hover:text-green-400">Faculty</a>
+                        </li>
+                        <li class="mt-3 text-white text-xs">
+                            <a href="Article.html" class="hover:text-green-400">Publications</a>
+                        </li>
+                        <li class="mt-3 text-white text-xs">
+                            <a href="#" class="hover:text-green-400">Registration</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <div class="nn sm:flex ml-5 sm:items-center sm:justify-between mb-6">
+                <div class="flex mb-6 space-x-5 sm:justify-center sm:mt-0">
+                    <a href="#" class="text-gray-500 hover:text-gray-900">
+                        <i class="fa-brands fa-telegram" style="color: #cfd5dd;"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900">
+                        <i class="fa-brands fa-facebook" style="color: #cfd5dd;"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900">
+                        <i class="fa-brands fa-instagram " style="color: #cfd5dd;"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900">
+                        <i class="fa-brands fa-youtube " style="color: #cfd5dd;"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900">
+                        <i class="fa-brands fa-linkedin" style="color: #cfd5dd;"></i>
+                    </a>
+                    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#"
+                            class="hover:underline">Yohan™</a>. All Rights Reserved.
+                    </span>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
+<script src="https://kit.fontawesome.com/15e7275a04.js" crossorigin="anonymous"></script>
