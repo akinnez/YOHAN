@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box; 
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
 }
 #btn-don{
     height: 28px;
@@ -27,12 +28,12 @@
 } */
 #bui-w{
     font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 #bui-u{
     font-size: 12px;
-    font-family: cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .bd-bot{
@@ -51,7 +52,7 @@
 #abt-t{
     font-size: 25px;
     font-weight: 600;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .log1{
     width: 100px;
@@ -63,7 +64,7 @@
 #inf1,#inf2{
     background-color: #fff;
     font-size: 10px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: rgba(107, 114, 128, 1);
 }
 #mid-con{
@@ -91,22 +92,23 @@
 }
 #pc-1,#pc-2,#pc-3{
     font-size: 10px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: rgba(107, 114, 128, 1);
     margin-top: 7px;
 }
 #sub-p{
     font-size: 12px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 #t-c{
     font-size: 30px;
     font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
 }
 #tt1,#tt2,#tt3{
     font-size: 12px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: rgba(107, 114, 128, 1);
 }
 .img3{
@@ -117,6 +119,12 @@
     width: 1263px;
     height: 500px;
     background-color: rgb(251, 249, 240);   
+}
+.hb{
+    color: rgba(103, 162, 79, 1);
+}
+.hc{
+    background-color: rgba(103, 162, 79, 1);
 }
 #con4{
     width: 1263px;
@@ -129,20 +137,25 @@
 @media only screen and (max-width: 768px) {
     #sub-p {
       font-size: 10px;
+      font-family: 'Montserrat', sans-serif;
     }
     #t-c {
       font-size: 24px;
+      font-family: 'Montserrat', sans-serif;
     }
     #tt1, #tt2, #tt3 {
       font-size: 10px;
+      font-family: 'Montserrat', sans-serif;
     }
     .img3 {
       width: 100%;
       height: auto;
+      font-family: 'Montserrat', sans-serif;
     }
     #conn {
       width: 100%;
       height: auto;
+      font-family: 'Montserrat', sans-serif;
     }
   }
   @media only screen and (max-width: 768px) {

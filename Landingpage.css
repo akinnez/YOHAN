@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .log1 {
@@ -45,14 +46,14 @@
 #pc-2,
 #pc-3 {
     font-size: 10px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: rgba(107, 114, 128, 1);
     margin-top: 7px;
 }
 
 #sub-p {
     font-size: 12px;
-    font-family: sans-serif;
+   font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
@@ -71,19 +72,22 @@
     height: 130px;
 }
 .ms{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color:rgba(64, 66, 79, 1);
 }
 .vb{
     color:rgba(64, 66, 79, 1);
     font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 .vbb{
     color:rgba(64, 66, 79, 1);
     font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 .ty{
     font-size: 9px;
+    font-family: 'Montserrat', sans-serif;
     color:  rgba(137, 140, 159, 1);
 }
 .bbn{
@@ -105,3 +109,9 @@
     height: 35px;
     width: 85px;
 }   
+.hb{
+    color: rgba(103, 162, 79, 1);
+}
+.hc{
+    background-color: rgba(103, 162, 79, 1);
+}
