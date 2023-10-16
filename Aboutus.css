@@ -3,20 +3,15 @@
     padding: 0;
     box-sizing: border-box; 
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; 
 }
 .caab{
     font-size: 17px;
 }
 .hgg{
     color: rgba(137, 140, 159, 1);
-    font-size: 10px;
 }
 
-#btn-don{
-    height: 28px;
-    width: 85px;
-}
 #btn-don3{
     height: 35px;
     width: 85px;
@@ -28,20 +23,9 @@
 #obj-b{
     height: 170px;
 }
-.img1{
-    height: 100px;
-}
-/* #box1{
-    margin-top: 100px;
-} */
 #bui-w{
     font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-}
-#bui-u{
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .bd-bot{
@@ -60,110 +44,55 @@
 #abt-t{
     font-size: 25px;
     font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
 }
 .log1{
     width: 100px;
 }
-.img2{
-    width: 1000px;
-    height: 340px;
-}
 #inf1,#inf2{
-    background-color: #fff;
-    font-size: 10px;
-    font-family: 'Montserrat', sans-serif;
     color: rgba(107, 114, 128, 1);
 }
-#mid-con{
-    background-color:rgba(2, 12, 79, 1);
-    width: 1263px;
-    height: 300px;
-}
-.con1{
-     background-color: #fff;
-     width: 250px;
-     height: 130px;
-     margin-top: 85px;
-}
-.con2{
-    background-color: #fff;
-    width: 250px;
-    height: 130px;
-    margin-top: 85px;
-}
-.con3{
-    background-color: #fff;
-    width: 250px;
-    height: 130px;
-    margin-top: 85px;
-}
-#pc-1,#pc-2,#pc-3{
-    font-size: 10px;
-    font-family: 'Montserrat', sans-serif;
-    color: rgba(107, 114, 128, 1);
-    margin-top: 7px;
-}
-#sub-p{
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-}
+
 #t-c{
     font-size: 30px;
     font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
 }
 #tt1,#tt2,#tt3{
     font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
     color: rgba(107, 114, 128, 1);
 }
-.img3{
-    width: 715.41px;
-    height: 400px;
-}
 #conn{
-    width: 1263px;
-    height: 500px;
     background-color: rgb(251, 249, 240);   
 }
 .hb{
-    color: rgba(103, 162, 79, 1);
+    color: #67a24f;
 }
 .hc{
     background-color: rgba(103, 162, 79, 1);
 }
 #con4{
-    width: 1263px;
-    height: 370px;
     background: linear-gradient(0deg, rgba(2, 12, 79, 0.80) 0%, rgba(2, 12, 79, 0.80) 100%), url(./images/Frame\ 626518.svg), lightgray 0px -218.5px / 100% 233.766% no-repeat;
 }
 .foot{
     background-color: rgba(2, 12, 79, 1);
 }
 @media only screen and (max-width: 768px) {
-    #sub-p {
-      font-size: 10px;
-      font-family: 'Montserrat', sans-serif;
-    }
     #t-c {
       font-size: 24px;
-      font-family: 'Montserrat', sans-serif;
+
     }
     #tt1, #tt2, #tt3 {
       font-size: 10px;
-      font-family: 'Montserrat', sans-serif;
+
     }
     .img3 {
       width: 100%;
       height: auto;
-      font-family: 'Montserrat', sans-serif;
+
     }
     #conn {
       width: 100%;
       height: auto;
-      font-family: 'Montserrat', sans-serif;
+
     }
   }
   @media only screen and (max-width: 768px) {

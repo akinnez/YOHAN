@@ -17,14 +17,16 @@
 </head>
 
 <body>
+    <!-- Responsive NavBar -->
     <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-around shadow-lg mx-auto p-4">
-            <a href="#" class="flex items-center">
+        <div
+            class="max-w-screen flex flex-wrap items-center justify-between px-4 md:px-0 md:justify-around  shadow-lg py-4">
+            <a href="#" class="flex items-center items-center">
                 <img class="log1" src="./images/yohanlogo.svg" alt="" />
             </a>
-            <button data-collapse-toggle="navbar-dropdown" type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="navbar-dropdown" aria-expanded="false">
+            <button data-collapse-toggle="navbar-dropdown1" type="button"
+                class="inline-flex items-center items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-dropdown1" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 17 14">
@@ -34,7 +36,7 @@
             </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
                 <ul
-                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    class="flex flex-col items-center font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
                         <a href="Landingpage.html"
                             class="block py-2 pl-3 pr-4 text-black rounded md:bg-transparent  md:p-0 dark:bg-blue-600 md:dark:bg-transparent"
@@ -201,310 +203,571 @@
                     <li>
                         <a href="Donate.html"
                             class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><button
-                                class="hc p-2 rounded text-xs">
+                                class="hc p-3 rounded-md text-white">
                                 Donate Now
                             </button></a>
                     </li>
                 </ul>
             </div>
+
+
+
+            <!-- Mobile screen -->
+            <div class="hidden w-full md:w-auto" id="navbar-dropdown1">
+                <div class="block md:hidden" id="accordion-collapse" data-accordion="collapse">
+                    <ul>
+                        <a href="Landingpage.html" aria-current="page">
+                            <li
+                                class="p-5 text-black font-medium rounded md:bg-transparent md:p-0 dark:bg-blue-600 md:dark:bg-transparent">
+                                Home
+                            </li>
+                        </a>
+
+                        <li id="accordion-collapse-heading-1" data-accordion-target="#accordion-collapse-body-1"
+                            aria-expanded="false" aria-controls="accordion-collapse-body-1"
+                            style="background-color: white !important;">
+                            <div class="flex items-center justify-between w-full p-5 font-medium text-left">
+                                <span>Who We Are</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M9 5 5 1 1 5" />
+                                </svg>
+                            </div>
+                            <div id="accordion-collapse-body-1" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-1">
+                                <div>
+                                    <ul class="px-5">
+                                        <a href="Aboutus.html" class="block py-2 hover:text-green-600">
+                                            <li class="flex border-b-2 gap-4 py-2">
+                                                <img src="./images/people.svg" alt="">
+                                                <span>About Us</span>
+                                            </li>
+                                        </a>
+                                        <a href="Theteam.html" class="block py-2 hover:text-green-600">
+                                            <li class="flex border-b-2 gap-4 py-2">
+                                                <img src="./images/profile-2user.svg" alt="">
+                                                <span>The Team</span>
+                                            </li>
+                                        </a>
+                                        <a href="Theboard.html" class="block py-2 hover:text-green-600">
+                                            <li class="flex border-b-2 gap-4 py-2">
+                                                <img src="./images/profile-2user.svg" alt="">
+                                                <span>The Board</span>
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li id="accordion-collapse-heading-2" data-accordion-target="#accordion-collapse-body-2"
+                            aria-expanded="false" aria-controls="accordion-collapse-body-2"
+                            style="background-color: white !important;">
+                            <div class="flex items-center justify-between w-full p-5 font-medium text-left">
+                                <span>Programs</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M9 5 5 1 1 5" />
+                                </svg>
+                            </div>
+                            <div id="accordion-collapse-body-2" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-2">
+                                <div>
+                                    <ul class="px-5">
+                                        <li>
+                                            <p class="ml-2 font-bold p-2 text-normal">CEEC Programs</p>
+                                            <a href="Bi-annual-summit.html"
+                                                class="block px-4 py-2 mt-2 hover:text-green-600 border-b-2 dark:hover:bg-gray-600 dark:hover:text-white">Bi-Annual
+                                                Programs</a>
+                                        </li>
+                                        <li>
+                                            <a href="ghcmd.html"
+                                                class="block py-2 px-4 hover:text-green-600 border-b-2">Global
+                                                Health Change Makers Dialogue
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="Fellowship.html"
+                                                class="block py-2 px-4 hover:text-green-600 border-b-2">Fellowship
+                                                Programs</a>
+                                        </li>
+                                        <li>
+                                            <a href="Syn-x.html"
+                                                class="block px-4 p-2 hover:text-green-600 border-b-2">SYN-X
+                                                Project</a>
+                                        </li>
+
+                                        <li>
+                                            <p class="font-bold mt-5 ml-3 text-normal">Population Health Intervention
+                                                Programs</p>
+                                            <a href="Save-a-breast.html"
+                                                class="block mt-5 px-4 py-2 hover:text-green-600 border-b-2">Save
+                                                A Breast Campaign</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="hlsh.html"
+                                                class="block px-4 py-2 hover:text-green-600 border-b-2">Advocacy
+                                                for Healthy Liver and Sexual Health
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="Safe-space.html"
+                                                class="block px-4 py-2 hover:text-green-600 border-b-2">Safe
+                                                Space Nigeria</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li id="accordion-collapse-heading-3" data-accordion-target="#accordion-collapse-body-3"
+                            aria-expanded="false" aria-controls="accordion-collapse-body-3"
+                            style="background-color: white !important;">
+                            <div class="flex items-center justify-between w-full p-5 font-medium text-left">
+                                <span>Resources</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M9 5 5 1 1 5" />
+                                </svg>
+                            </div>
+                            <div id="accordion-collapse-body-3" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-3">
+                                <div>
+                                    <ul class="px-5">
+                                        <a href="Blog.html" class="block py-2 hover:text-green-600">
+                                            <li class="flex border-b-2 gap-4 py-2">
+                                                <img src="./images/edit.svg" alt="">
+                                                <span>Our Blog</span>
+                                            </li>
+                                        </a>
+                                        <a href="Podcast.html" class="block py-2 hover:text-green-600">
+                                            <li class="flex border-b-2 gap-4 py-2">
+                                                <img src="./images/microphone.svg" alt="">
+                                                <span>Our Podcast</span>
+                                            </li>
+                                        </a>
+                                        <a href="Trainings.html" class="block py-2 hover:text-green-600">
+                                            <li class="flex border-b-2 gap-4 py-2">
+                                                <img src="./images/book.svg" alt="">
+                                                <span>Trainings</span>
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li id="accordion-collapse-heading-4" data-accordion-target="#accordion-collapse-body-4"
+                            aria-expanded="false" aria-controls="accordion-collapse-body-4"
+                            style="background-color: white !important;">
+                            <div
+                                class="flex items-center justify-between w-full p-5 font-medium text-left focus:bg-white">
+                                <span>Research Institute</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M9 5 5 1 1 5" />
+                                </svg>
+                            </div>
+                            <div id="accordion-collapse-body-4" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-4">
+                                <div>
+                                    <ul class="px-5">
+                                        <a href="faculty.html" class="block py-2 hover:text-green-600">
+                                            <li class="flex border-b-2 gap-4 py-2">
+                                                <img src="./images/teacher.svg" alt="">
+                                                <span>Faculty</span>
+                                            </li>
+                                        </a>
+                                        <a href="Article.html" class="block py-2 hover:text-green-600">
+                                            <li class="flex border-b-2 gap-4 py-2">
+                                                <img src="./images/book.svg" alt="">
+                                                <span>Publications</span>
+                                            </li>
+                                        </a>
+                                        <a href="institute.html" class="block py-2 hover:text-green-600">
+                                            <li class="flex border-b-2 gap-4 py-2">
+                                                <img src="./images/profile-2user.svg" alt="">
+                                                <span>About Us</span>
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <a href="membership.html" aria-current="page">
+                            <li
+                                class="p-5 text-black font-medium rounded md:bg-transparent md:p-0 dark:bg-blue-600 md:dark:bg-transparent">
+                                Join Us
+                            </li>
+                        </a>
+                        <a href="Contact.html" aria-current="page">
+                            <li
+                                class="p-5 text-black font-medium rounded md:bg-transparent md:p-0 dark:bg-blue-600 md:dark:bg-transparent">
+                                Contact
+                            </li>
+                        </a>
+                        <li class="px-5">
+                            <a href="Donate.html"
+                                class="py-5 text-gray-900 box-content rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                                <button class="hc p-5 rounded text-normal md:p-3 text-white w-full">
+                                    Donate Now
+                                </button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </nav>
-    <div>
+
+
+    <div class="px-3 md:px-10 md:w-4/5 md:mx-auto">
         <div>
-            <img class="ml-48 mt-10 rounded-lg" src="./images/p1.svg" alt="">
+            <img class="mt-10 rounded-lg mx-auto" src="./images/p1.svg" alt="">
         </div>
         <div>
-            <h1 class="text-3xl text-center mt-10">SYN-X PROJECT LAUNCH</h1><br>
-            <p class="text-xs text-center">by Nzubechukwu Ogamba
-                June 22nd, 2023
-                3mins read</p>
+            <h1 class="text-3xl text-center mt-10">SYN-X PROJECT LAUNCH</h1>
+            <p class="text-normal text-center">
+                <span class="block">by Nzubechukwu Ogamba</span>
+                <span class="block">June 22nd, 2023</span>
+                <span class="block">3mins read</span>
+            </p>
         </div>
         <div>
-            <p class="tyy ml-56 mt-10">Metabolic syndrome, also known as syndrome X, has been defined by the American
-                Heart Association as a group of five risk factors <br> that can lead to heart disease, diabetes, stroke,
-                and other health problems. Metabolic syndrome is diagnosed when someone has <br> three or more of these
-                conditions:</p><br>
-            <li class="tyy ml-64">Elevated blood glucose (sugar)</li><br>
-            <li class="tyy ml-64">Reduced levels of HDL (“good”) cholesterol in the blood</li><br>
-            <li class="tyy ml-64">Elevated levels of triglycerides in the blood</li><br>
-            <li class="tyy ml-64">Large waist circumference or “apple-shaped” body</li><br>
-            <li class="tyy ml-64">Elevated blood pressure</li><br>
-            <p class="tyy ml-56">Diabetes characterised by elevated blood sugar and hypertension characterised by
-                elevated blood pressure are the two most <br> common non-communicable diseases suffered by the elderly
-                population in Nigeria. The morbidity and mortality from these two <br> diseases have been on the
+            <p class="tyy mt-10">Metabolic syndrome, also known as syndrome X, has been defined by the American
+                Heart Association as a group of five risk factors that can lead to heart disease, diabetes, stroke,
+                and other health problems. Metabolic syndrome is diagnosed when someone has three or more of these
+                conditions:</p>
+            <li class="tyy px-5">Elevated blood glucose (sugar)</li>
+            <li class="tyy px-5">Reduced levels of HDL (“good”) cholesterol in the blood</li>
+            <li class="tyy px-5">Elevated levels of triglycerides in the blood</li>
+            <li class="tyy px-5">Large waist circumference or “apple-shaped” body</li>
+            <li class="tyy px-5">Elevated blood pressure</li>
+            <p class="tyy">Diabetes characterised by elevated blood sugar and hypertension characterised by
+                elevated blood pressure are the two most common non-communicable diseases suffered by the elderly
+                population in Nigeria. The morbidity and mortality from these two diseases have been on the
                 increase in the recent past in Nigeria, and they often co-exist.
-            </p><br>
-            <p class="tyy ml-56">Over the years, the incidence of hypertension and diabetes has risen significantly,
-                owing to various risk factors like advancing age, <br> obesity, lifestyle, and poor dietary habits.
-                Among non-communicable diseases, diabetes has become a significant problem in Sub- <br>Saharan Africa,
+            </p>
+            <p class="tyy">Over the years, the incidence of hypertension and diabetes has risen significantly,
+                owing to various risk factors like advancing age, obesity, lifestyle, and poor dietary habits.
+                Among non-communicable diseases, diabetes has become a significant problem in Sub- Saharan Africa,
                 with Nigeria being the most affected country. It is expected that the total number of people living with
-                diabetes will <br> rise to 336 million by 2030, compared to 171 million in 2000. In contrast, the number
-                of adults living with hypertension is expected to <br> reach 1.56 billion people by 2025, representing
+                diabetes will rise to 336 million by 2030, compared to 171 million in 2000. In contrast, the number
+                of adults living with hypertension is expected to reach 1.56 billion people by 2025, representing
                 an alarming 60% increase.
-            </p><br>
-            <p class="tyy ml-56">In order to tackle this, the Executive Director of YOHAN Africa launched a project to
-                tackle hypertension and diabetes among the <br> elderly in Nigeria's rural communities.</p>
+            </p>
+            <p class="tyy">In order to tackle this, the Executive Director of YOHAN Africa launched a project to
+                tackle hypertension and diabetes among the elderly in Nigeria's rural communities.</p>
         </div>
-        <div class="grid grid-cols-2 px-56 mt-10">
-            <div>
-                <img class="rounded-lg h-72" src="./images/p2.svg" alt="">
+        <div class="md:flex md:gap-7 justify-center mt-10">
+            <div class="my-5 md:0">
+                <img class="rounded-lg h-72 mx-auto md:mx-0" src="./images/p2.svg" alt="">
             </div>
-            <div>
-                <img class="rounded-lg h-72" src="./images/p3.svg" alt="">
+            <div class="my-5 md:0">
+                <img class="rounded-lg h-72 mx-auto md:mx-0" src="./images/p3.svg" alt="">
             </div>
         </div>
         <div>
-            <p class="tyy ml-56 mt-10">The Syn-X project was launched with two projects in rural communities, Awhum in
-                Enugu state and Owa-Alero in Delta state, to help <br> tackle this rising epidemic using the following
-                strategies:</p><br>
-            <li class="tyy ml-56">Awareness Campaigns; This focuses on delivering basic information to the beneficiaries
-                in the most effective manner using local <br> dialects.</li><br>
-            <li class="tyy ml-56">Screening Exercise; Fasting blood sugar is checked, blood pressure and waist
+            <p class="tyy mt-10">The Syn-X project was launched with two projects in rural communities, Awhum in
+                Enugu state and Owa-Alero in Delta state, to help tackle this rising epidemic using the following
+                strategies:</p>
+            <li class="tyy px-5">Awareness Campaigns; This focuses on delivering basic information to the beneficiaries
+                in the most effective manner using local dialects.</li>
+            <li class="tyy px-5">Screening Exercise; Fasting blood sugar is checked, blood pressure and waist
                 circumference measured, and
-                the data adequately <br> kept for linkage to care and follow-up.</li><br>
-            <li class="tyy ml-56">
+                the data adequately kept for linkage to care and follow-up.</li>
+            <li class="tyy px-5">
                 Consultations and Counselling; Health professionals answer individual questions and offer advice on
-                lifestyle adjustment,<br> adherence to medications, and also pay attention to other comorbidities like
+                lifestyle adjustment, adherence to medications, and also pay attention to other comorbidities like
                 peptic ulcer disease, arthritis, etc.</li>
-            <li class="tyy ml-56"> Free Medications; Donated medications are dispensed to those who need them. This
-                helps establish the need for medication <br> adherence among the beneficiaries. Other medications to
-                manage comorbidities are also dispensed.</li><br>
-            <li class="tyy ml-56">Linkage to Care; The project is carried out in collaboration with the most accessible
-                health facility, primary or secondary, to <br> ensure adequate continued care. The project also aims to
-                inculcate comprehensive capacity building where it is lacking in some <br> of the communities.</li><br>
-            <li class="tyy ml-56"> Follow-up; In addition to this, a sustainability plan spanning 9-12 months to ensure
-                enrolled participants are properly followed <br> up, adhere to medications, and ultimately establish
-                behavioural change.</li><br>
-            <p class="tyy ml-56">182 elderly people have benefited from the project, with an average point prevalence
-                rate of 89% recorded for hypertension and 14% <br> for elevated fasting blood sugar (diabetes), and all
-                participants who had high blood glucose were also known to have hypertension.</p><br>
-            <div class="px-80">
-                <img class="h-80 ml-24" src="./images/p4.svg" alt="">
-            </div><br>
-            <p class="tyy ml-56">The project is proposed to continue in rural communities to increase access to health
-                information, diagnosis, linkage to care, and <br> follow-up. We are also investing in innovative ideas
-                that can best improve the current picture.</p><br>
-            <p class="tyy ml-56">The target is to reach 10,000 elderly individuals by 2025 in at least 15 communities in
-                Nigeria. Community leaders, health centres, <br> philanthropists, non-governmental organizations,
-                religious organizations, corporate bodies, other concerned individuals, and <br> organizations are
+            <li class="tyy px-5"> Free Medications; Donated medications are dispensed to those who need them. This
+                helps establish the need for medication adherence among the beneficiaries. Other medications to
+                manage comorbidities are also dispensed.</li>
+            <li class="tyy px-5">Linkage to Care; The project is carried out in collaboration with the most accessible
+                health facility, primary or secondary, to ensure adequate continued care. The project also aims to
+                inculcate comprehensive capacity building where it is lacking in some of the communities.</li>
+            <li class="tyy px-5"> Follow-up; In addition to this, a sustainability plan spanning 9-12 months to ensure
+                enrolled participants are properly followed up, adhere to medications, and ultimately establish
+                behavioural change.</li>
+            <p class="tyy">182 elderly people have benefited from the project, with an average point prevalence
+                rate of 89% recorded for hypertension and 14% for elevated fasting blood sugar (diabetes), and all
+                participants who had high blood glucose were also known to have hypertension.</p>
+            <div class="my-5">
+                <img class="h-80 mx-auto" src="./images/p4.svg" alt="">
+            </div>
+            <p class="tyy">The project is proposed to continue in rural communities to increase access to health
+                information, diagnosis, linkage to care, and follow-up. We are also investing in innovative ideas
+                that can best improve the current picture.</p>
+            <p class="tyy">The target is to reach 10,000 elderly individuals by 2025 in at least 15 communities in
+                Nigeria. Community leaders, health centres, philanthropists, non-governmental organizations,
+                religious organizations, corporate bodies, other concerned individuals, and organizations are
                 encouraged to partner with YOHAN Africa to reduce the burden of these non-communicable diseases.
-            </p><br>
-            <p class="tyy ml-56">Join us in the fight against hypertension and diabetes among Nigeria's elderly in rural
-                communities. Together, we can make a <br> difference in their lives and reduce the burden of
-                non-communicable diseases. Here's how you can get involved:</p><br>
-            <li class="tyy mt-5 ml-56">Partner with YOHAN Africa: Community leaders, health centres, philanthropists,
-                non-governmental organisations, religious <br> organisations, corporate bodies, and concerned
-                individuals and organisations, let's collaborate to extend the reach of the SYN-X <br> Project.</li><br>
-            <li class="tyy ml-56">Donate and Support: Your contributions can help provide essential resources,
-                medications, and healthcare services to those in <br> need. Every donation counts.</li><br>
-            <li class="tyy ml-56">Spread Awareness: Share this initiative with your network, friends, and family to
-                raise awareness about the importance of <br> addressing hypertension and diabetes in Nigeria's elderly
-                population.</li><br>
-            <li class="tyy ml-56">Volunteer: If you have expertise in healthcare, community outreach, or project
-                management, consider volunteering your time <br> and skills to make a lasting impact.</li><br>
-            <li class="tyy ml-56">Contact Us: For more information on how you can make a difference, reach out to us at
-                programs@yohanafrica.org.</li><br>
-            <p class="ml-56 text-green-400 font-bold">SOURCES</p><br>
-            <p class="tyy ml-56">Fasanmade OA, Dagogo-Jack S. Diabetes Care in Nigeria. Annals of Global Health. 2015
-                Nov-Dec;81(6):821-9. doi: 10.1016/ <br>j.aogh.2015.12.012.</p><br>
-            <p class="tyy ml-56">Wild S, Roglic G, Green A, Sicree R, King H. Global prevalence of diabetes: Estimates
-                for the year 2000 and projections for 2030. <br> Diabetes Care. 2004 May;27(5):1047-53. doi:
+            </p>
+            <p class="tyy my-5">Join us in the fight against hypertension and diabetes among Nigeria's elderly in rural
+                communities. Together, we can make a difference in their lives and reduce the burden of
+                non-communicable diseases. Here's how you can get involved:</p>
+            <li class="tyy px-5 mt-5">Partner with YOHAN Africa: Community leaders, health centres, philanthropists,
+                non-governmental organisations, religious organisations, corporate bodies, and concerned
+                individuals and organisations, let's collaborate to extend the reach of the SYN-X Project.</li>
+            <li class="tyy px-5">Donate and Support: Your contributions can help provide essential resources,
+                medications, and healthcare services to those in need. Every donation counts.</li>
+            <li class="tyy px-5">Spread Awareness: Share this initiative with your network, friends, and family to
+                raise awareness about the importance of addressing hypertension and diabetes in Nigeria's elderly
+                population.</li>
+            <li class="tyy px-5">Volunteer: If you have expertise in healthcare, community outreach, or project
+                management, consider volunteering your time and skills to make a lasting impact.</li>
+            <li class="tyy px-5">Contact Us: For more information on how you can make a difference, reach out to us at
+                programs@yohanafrica.org.</li>
+            <p class="text-green-400 font-bold mt-5">SOURCES</p>
+            <p class="tyy my-5">Fasanmade OA, Dagogo-Jack S. Diabetes Care in Nigeria. Annals of Global Health. 2015
+                Nov-Dec;81(6):821-9. doi: 10.1016/ j.aogh.2015.12.012.</p>
+            <p class="tyy">Wild S, Roglic G, Green A, Sicree R, King H. Global prevalence of diabetes: Estimates
+                for the year 2000 and projections for 2030. Diabetes Care. 2004 May;27(5):1047-53. doi:
                 10.2337/diacare.27.5.1047.</p>
         </div>
-    </div>
-    <div>
-        <h1 class="font-bold text-center mt-10">Check Related Articles</h1>
-        <div class="grid grid-cols-3 px-72 mt-20">
-            <div>
-                <img class="h-40" src="./images/b2.svg" alt=""><br>
-                <p class="font-bold text-xs">Understanding your heartbeat</p><br>
-                <p class="ty">The heart is an important organ in the body from <br> which our life force flows. Most
-                    times,
-                    the heart <br> gets over worked from pumping blood.</p><br>
-                <button class="hc rounded text-xs text-white w-28 h-7">Read more</button>
-            </div>
-            <div>
-                <img class="h-40" src="./images/b2.svg" alt=""><br>
-                <p class="font-bold text-xs">Understanding your heartbeat</p><br>
-                <p class="ty">The heart is an important organ in the body from <br> which our life force flows. Most
-                    times,
-                    the heart <br> gets over worked from pumping blood.</p><br>
-                <button class="hc rounded text-xs text-white w-28 h-7">Read more</button>
-            </div>
-            <div>
-                <img class="h-40" src="./images/b2.svg" alt=""><br>
-                <p class="font-bold text-xs">Understanding your heartbeat</p><br>
-                <p class="ty">The heart is an important organ in the body from <br> which our life force flows. Most
-                    times,
-                    the heart <br> gets over worked from pumping blood.</p><br>
-                <button class="hc rounded text-xs text-white w-28 h-7">Read more</button>
-            </div>
-            <div class="mt-8">
-                <img class="h-40" src="./images/b2.svg" alt=""><br>
-                <p class="font-bold text-xs">Understanding your heartbeat</p><br>
-                <p class="ty">The heart is an important organ in the body from <br> which our life force flows. Most
-                    times,
-                    the heart <br> gets over worked from pumping blood.</p><br>
-                <button class="hc rounded text-xs text-white w-28 h-7">Read more</button>
-            </div>
-            <div class="mt-8">
-                <img class="h-40" src="./images/b2.svg" alt=""><br>
-                <p class="font-bold text-xs">Understanding your heartbeat</p><br>
-                <p class="ty">The heart is an important organ in the body from <br> which our life force flows. Most
-                    times,
-                    the heart <br> gets over worked from pumping blood.</p><br>
-                <button class="hc rounded text-xs text-white w-28 h-7">Read more</button>
-            </div>
-            <div class="mt-8">
-                <img class="h-40" src="./images/b2.svg" alt=""><br>
-                <p class="font-bold text-xs">Understanding your heartbeat</p><br>
-                <p class="ty">The heart is an important organ in the body from <br> which our life force flows. Most
-                    times,
-                    the heart <br> gets over worked from pumping blood.</p><br>
-                <button class="hc rounded text-xs text-white w-28 h-7">Read more</button>
-            </div>
-        </div>
-        <div id="con4">
-            <div class="grid md:grid-cols-2 mt-20 p-full ml-96 w-50 object-center m-auto">
-                <div class="mt-20 relative text-center">
-                    <h3 class="text-white text-3xl font-bold font-sans">
-                        Subscribe to Our Newsletter
-                    </h3><br>
-                    <span>
-                        <p class="text-white text-xs ml-10">Sign up for our email newsletter and get updated on our</p>
-                        <p class="text-white text-xs ml-10">special community activities </p>
-                    </span>
-                </div>
-            </div> <br>
-            <div class="flex justify-center">
-                <input type="text"
-                    class="w-75 p-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="Enter your text here">
-                <button class="hc text-white font-bold py-2 px-4 rounded-r-lg">Submit</button>
-            </div>
-        </div>
-        <footer class="foot dark:bg-gray-900">
-            <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 flex flex-wrap justify-center">
-                <div class="flex-1">
-                    <img src="./images/yohanlogo.svg" alt="Logo" class="h-10 ml-7 absolute mb-20" />
-                    <p class="caa font-bold mt-16 ml-11 text-white">Contact Address</p>
-                    <div class="flex ml-11 mt-5 text-white">
-                        <span class="material-symbols-outlined"> location_on </span>
-                        <p class="hgg mt-1 ml-2 text-white">Enugu, Nigeria</p>
-                    </div>
-                    <div class="flex ml-11 mt-3 text-white">
-                        <span class="material-symbols-outlined"> mail </span>
-                        <p class="ml-2 hgg mt-1 text-white">programs@yohanafrica.org</p>
-                    </div>
-                    <p class="caab font-bold mt-5 ml-11 text-white">Social Network</p>
-                    <div class="nn sm:flex ml-11 mt-5 sm:items-center sm:justify-between mb-6">
-                        <div class="flex mb-6 space-x-5 sm:justify-center sm:mt-0">
-                            <a href="#" class="text-gray-500 hover:text-gray-900">
-                                <i class="fa-brands fa-telegram" style="color: #cfd5dd;"></i>
-                            </a>
-                            <a href="#" class="text-gray-500 hover:text-gray-900">
-                                <i class="fa-brands fa-facebook" style="color: #cfd5dd;"></i>
-                            </a>
-                            <a href="#" class="text-gray-500 hover:text-gray-900">
-                                <i class="fa-brands fa-instagram " style="color: #cfd5dd;"></i>
-                            </a>
-                            <a href="#" class="text-gray-500 hover:text-gray-900">
-                                <i class="fa-brands fa-youtube " style="color: #cfd5dd;"></i>
-                            </a>
-                            <a href="#" class="text-gray-500 hover:text-gray-900">
-                                <i class="fa-brands fa-linkedin" style="color: #cfd5dd;"></i>
-                            </a>
-                            <a href="#" class="text-gray-500 hover:text-gray-900">
-                                <i class="fa-brands fa-x-twitter" style="color: #cfd5dd;"></i>
-                            </a>
-                            <a href="#" class="text-gray-500 hover:text-gray-900">
-                                <i class="fa-brands fa-tiktok" style="color: #cfd5dd;"></i>
-                            </a>
-                        </div>
 
+        <div>
+            <h1 class="font-bold text-center mt-10">Check Related Articles</h1>
+            <div class="md:grid md:grid-cols-3 md:gap-5 my-20">
+                <div>
+                    <img class="" src="./images/b2.svg" alt="">
+                    <p class="font-bold text-normal my-5">Understanding your heartbeat</p>
+                    <p class="ty">The heart is an important organ in the body from which our life force flows. Most
+                        times,
+                        the heart gets over worked from pumping blood.</p>
+                    <div class="my-5">
+                        <a href="#"
+                            class="py-5 text-gray-900 box-content rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                            <button class="hc p-5 rounded text-normal md:p-3 text-white">
+                                Read more
+                            </button>
+                        </a>
                     </div>
-                </div>
-
-                <div class="flex-1">
-                    <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
-                        YOHAN Africa
-                    </h2>
-                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                        <li class="mb-4 text-white text-xs">
-                            <a href="Aboutus.html" class="hover:text-green-600">About Us</a>
-                        </li>
-                        <li class="text-white text-xs">
-                            <a href="https://tailwindcss.com/" class="hover:text-green-600">Our Team</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="flex-1">
-                    <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
-                        Programs
-                    </h2>
-                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                        <li class="mb-4 text-white text-xs">
-                            <a href="Bi-annual-summit.html" class="hover:text-green-600">Bi-Annual Summit</a>
-                        </li>
-                        <li class="mb-4 text-white text-xs">
-                            <a href="Fellowship.html" class="hover:text-green-600">Fellowship Program</a>
-                        </li>
-                        <li class="mb-4 text-white text-xs">
-                            <a href="ghcmd.html" class="hover:text-green-600">Global Health Change Makers <br />
-                                Dialogue</a>
-                        </li>
-                        <li class="mb-4 text-white text-xs">
-                            <a href="hlsh.html" class="hover:text-green-600">Advocacy for Healthy Liver and <br />
-                                Sexual Health</a>
-                        </li>
-                        <li class="mb-4 text-white text-xs">
-                            <a href="Save-a-breast.html" class="hover:text-green-600">Save a Breast Campaign</a>
-                        </li>
-                        <li class="mb-4 text-white text-xs">
-                            <a href="Safe-space.html" class="hover:text-green-600">Safe Space</a>
-                        </li>
-                        <li class="mb-4 text-white text-xs">
-                            <a href="Syn-x.html" class="hover:text-green-600">Syn-X Projects</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="flex-1">
-                    <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
-                        Resources
-                    </h2>
-                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                        <li class="mb-4 text-white text-xs">
-                            <a href="Blog.html" class="hover:text-green-600">Blog</a>
-                        </li>
-                        <li class="text-white text-xs">
-                            <a href="Podcast.html" class="hover:text-green-600">Podcast</a>
-                        </li>
-                        <li class="mt-3 text-white text-xs">
-                            <a href="Trainings.html" class="hover:text-green-600">Trainings</a>
-                        </li>
-                    </ul>
                 </div>
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
-                        Research Institute
-                    </h2>
-                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                        <li class="mb-4 text-white text-xs">
-                            <a href="institute.html" class="hover:text-green-600">About</a>
-                        </li>
-                        <li class="mt-3 text-white text-xs">
-                            <a href="faculty.html" class="hover:text-green-600">Faculty</a>
-                        </li>
-                        <li class="mt-3 text-white text-xs">
-                            <a href="Article.html" class="hover:text-green-600">Publications</a>
-                        </li>
-                        <li class="mt-3 text-white text-xs">
-                            <a href="#" class="hover:text-green-600">Registration</a>
-                        </li>
-                    </ul>
+                    <img class="" src="./images/b2.svg" alt="">
+                    <p class="font-bold text-normal my-5">Understanding your heartbeat</p>
+                    <p class="ty">The heart is an important organ in the body from which our life force flows. Most
+                        times,
+                        the heart gets over worked from pumping blood.</p>
+                    <div class="my-5">
+                        <a href="#"
+                            class="py-5 text-gray-900 box-content rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                            <button class="hc p-5 rounded text-normal md:p-3 text-white">
+                                Read more
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img class="" src="./images/b2.svg" alt="">
+                    <p class="font-bold text-normal my-5">Understanding your heartbeat</p>
+                    <p class="ty">The heart is an important organ in the body from which our life force flows. Most
+                        times,
+                        the heart gets over worked from pumping blood.</p>
+                    <div class="my-5">
+                        <a href="#"
+                            class="py-5 text-gray-900 box-content rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                            <button class="hc p-5 rounded text-normal md:p-3 text-white">
+                                Read more
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img class="" src="./images/b2.svg" alt="">
+                    <p class="font-bold text-normal my-5">Understanding your heartbeat</p>
+                    <p class="ty">The heart is an important organ in the body from which our life force flows. Most
+                        times,
+                        the heart gets over worked from pumping blood.</p>
+                    <div class="my-5">
+                        <a href="#"
+                            class="py-5 text-gray-900 box-content rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                            <button class="hc p-5 rounded text-normal md:p-3 text-white">
+                                Read more
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img class="" src="./images/b2.svg" alt="">
+                    <p class="font-bold text-normal my-5">Understanding your heartbeat</p>
+                    <p class="ty">The heart is an important organ in the body from which our life force flows. Most
+                        times,
+                        the heart gets over worked from pumping blood.</p>
+                    <div class="my-5">
+                        <a href="#"
+                            class="py-5 text-gray-900 box-content rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                            <button class="hc p-5 rounded text-normal md:p-3 text-white">
+                                Read more
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img class="" src="./images/b2.svg" alt="">
+                    <p class="font-bold text-normal my-5">Understanding your heartbeat</p>
+                    <p class="ty">The heart is an important organ in the body from which our life force flows. Most
+                        times,
+                        the heart gets over worked from pumping blood.</p>
+                    <div class="my-5">
+                        <a href="#"
+                            class="py-5 text-gray-900 box-content rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                            <button class="hc p-5 rounded text-normal md:p-3 text-white">
+                                Read more
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="py-20 md:py-40 text-center" id="con4">
+        <h3 class=" text-white text-2xl mb-5 font-bold">
+            Subscribe to Our Newsletter</h3>
+        <span>
+            <p class="text-white text-normal">Sign up for our email newsletter and get updated on our</p>
+            <p class="text-white text-normal my-5">special community activities </p>
+        </span>
+        <form class="flex justify-center">
+            <input type="text"
+                class="w-75 p-3 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Enter your text here">
+            <button class="text-white p-3 text-normal rounded-r-md hc">Submit</button>
+        </form>
+    </div>
+
+    <!-- Responsive Footer -->
+    <footer class="foot dark:bg-gray-900 px-3 md:px-20">
+        <div class="mx-auto w-full py-6 lg:py-8 flex justify-between flex-col-reverse md:flex-row">
+
+            <div class="mt-10 border-t-4 border-white md:mt-0 md:border-0">
+                <div class="pt-5 md:pt-0">
+                    <img src="./images/yohanlogo.svg" alt="Logo" class="h-15 mx-auto md:mx-0" />
+                </div>
+                <p class="caa font-bold mt-8 text-white">Contact Address</p>
+                <div class="flex mt-5 text-white">
+                    <span class="material-symbols-outlined">location_on </span>
+                    <p class="hgg mt-1 ml-2 text-white">Enugu, Nigeria</p>
+                </div>
+                <div class="flex mt-3 text-white">
+                    <span class="material-symbols-outlined"> mail </span>
+                    <p class="ml-2 hgg mt-1 text-white">programs@yohanafrica.org</p>
+                </div>
+                <p class="caab font-bold mt-5 text-white">Social Network</p>
+                <div class="sm:flex mt-5 sm:items-center sm:justify-between mb-6">
+                    <div class="flex my-6 text-2xl space-x-5 justify-center sm:mt-0">
+                        <a href="#" class="text-gray-500 hover:text-gray-900">
+                            <i class="fa-brands fa-telegram" style="color: #cfd5dd;"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-gray-900">
+                            <i class="fa-brands fa-facebook" style="color: #cfd5dd;"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-gray-900">
+                            <i class="fa-brands fa-instagram " style="color: #cfd5dd;"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-gray-900">
+                            <i class="fa-brands fa-youtube " style="color: #cfd5dd;"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-gray-900">
+                            <i class="fa-brands fa-linkedin" style="color: #cfd5dd;"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-gray-900">
+                            <i class="fa-brands fa-x-twitter" style="color: #cfd5dd;"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-gray-900">
+                            <i class="fa-brands fa-tiktok" style="color: #cfd5dd;"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </footer>
+
+            <div class="">
+                <h2 class="my-6 text-sm font-semibold text-white uppercase dark:text-white">
+                    YOHAN Africa
+                </h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-4 text-white text-normal">
+                        <a href="Aboutus.html" class="hover:text-green-600">About Us</a>
+                    </li>
+                    <li class="text-white text-normal">
+                        <a href="Theteam.html" class="hover:text-green-600">Our Team</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="">
+                <h2 class="my-6 text-sm font-semibold text-white uppercase dark:text-white">
+                    Programs
+                </h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-4 text-white text-normal">
+                        <a href="Bi-annual-summit.html" class="hover:text-green-600">Bi-Annual Summit</a>
+                    </li>
+                    <li class="mb-4 text-white text-normal">
+                        <a href="Fellowship.html" class="hover:text-green-600">Fellowship Program</a>
+                    </li>
+                    <li class="mb-4 text-white text-normal">
+                        <a href="ghcmd.html" class="hover:text-green-600">Global Health Change Makers <br />
+                            Dialogue</a>
+                    </li>
+                    <li class="mb-4 text-white text-normal">
+                        <a href="hlsh.html" class="hover:text-green-600">Advocacy for Healthy Liver and <br />
+                            Sexual Health</a>
+                    </li>
+                    <li class="mb-4 text-white text-normal">
+                        <a href="Save-a-breast.html" class="hover:text-green-600">Save a Breast Campaign</a>
+                    </li>
+                    <li class="mb-4 text-white text-normal">
+                        <a href="Safe-space.html" class="hover:text-green-600">Safe Space</a>
+                    </li>
+                    <li class="mb-4 text-white text-normal">
+                        <a href="Syn-x.html" class="hover:text-green-600">Syn-X Projects</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="">
+                <h2 class="my-6 text-sm font-semibold text-white uppercase dark:text-white">
+                    Resources
+                </h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-4 text-white text-normal">
+                        <a href="Blog.html" class="hover:text-green-600">Blog</a>
+                    </li>
+                    <li class="text-white text-normal">
+                        <a href="Podcast.html" class="hover:text-green-600">Podcast</a>
+                    </li>
+                    <li class="mt-3 text-white text-normal">
+                        <a href="Trainings.html" class="hover:text-green-600">Trainings</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="my-6 text-sm font-semibold text-white uppercase dark:text-white">
+                    Research Institute
+                </h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-4 text-white text-normal">
+                        <a href="institute.html" class="hover:text-green-600">About</a>
+                    </li>
+                    <li class="mt-3 text-white text-normal">
+                        <a href="faculty.html" class="hover:text-green-600">Faculty</a>
+                    </li>
+                    <li class="mt-3 text-white text-normal">
+                        <a href="Article.html" class="hover:text-green-600">Publications</a>
+                    </li>
+                    <li class="mt-3 text-white text-normal">
+                        <a href="#" class="hover:text-green-600">Registration</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     </div>
 </body>
 
