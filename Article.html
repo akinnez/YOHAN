@@ -18,412 +18,397 @@
 
 <body>
     <!-- Responsive NavBar -->
-    <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:bg-gray-900 dark:text-white">
         <div
-            class="max-w-screen flex flex-wrap items-center justify-between px-4 md:px-0 md:justify-around  shadow-lg py-4">
-            <a href="#" class="flex items-center items-center">
-                <img class="log1" src="./images/yohanlogo.svg" alt="" />
-            </a>
-            <button data-collapse-toggle="navbar-dropdown1" type="button"
-                class="inline-flex items-center items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="navbar-dropdown1" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 17 14">
+          class="max-w-screen flex flex-wrap items-center justify-between px-4 md:px-0 md:justify-around  shadow-lg py-4">
+          <a href="#" class="flex items-center items-center">
+            <img src="./images/yohanlogo.svg" alt="" />
+          </a>
+          <button data-collapse-toggle="navbar-dropdown1" type="button"
+            class="inline-flex items-center items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-dropdown1" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul
+              class="flex flex-col items-center font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white md:dark:bg-gray-900 md:dark:text-white">
+              <li>
+                <a href="Landingpage.html"
+                  class="block py-2 pl-3 pr-4 text-black rounded md:bg-transparent dark:bg-gray-900 dark:text-white md:hover:text-green-600"
+                  aria-current="page">Home</a>
+              </li>
+              <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center text-black justify-between w-full py-2 pl-3 pr-4 rounded dark:bg-gray-900 dark:text-white md:border-0 md:hover:text-green-600 md:p-0 md:w-auto">
+                  Who We Are
+                  <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 10 6">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M1 1h15M1 7h15M1 13h15" />
-                </svg>
-            </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-                <ul
-                    class="flex flex-col items-center font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                    <li>
-                        <a href="Landingpage.html"
-                            class="block py-2 pl-3 pr-4 text-black rounded md:bg-transparent  md:p-0 dark:bg-blue-600 md:dark:bg-transparent"
-                            aria-current="page">Home</a>
+                      d="m1 1 4 4 4-4" />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar"
+                  class="z-10 hidden font-normal p-3 bg-white divide-y divide-gray-100 shadow w-62">
+                  <ul class="py-2 text-sm grid grid-cols-4 gap text-gray-700 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton">
+                    <p class="font-bold mt-2 ml-3">Who We Are</p>
+                    <li class="flex">
+                      <img src="./images/people.svg" alt=""><a href="Aboutus.html"
+                        class="block px-4 py-2 hover:text-green-600">About
+                        Us</a>
                     </li>
-                    <li>
-                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                            class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 md:w-auto dark:text-white md:dark:hover:text-green-400 text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
-                            Who We Are
-                            <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 1 4 4 4-4" />
-                            </svg>
-                        </button>
-                        <!-- Dropdown menu -->
-                        <div id="dropdownNavbar"
-                            class="z-10 hidden font-normal p-3 bg-white divide-y divide-gray-100 shadow w-62 dark:bg-gray-700 dark:divide-gray-600">
-                            <ul class="py-2 text-sm grid grid-cols-4 gap text-gray-700 dark:text-gray-400"
-                                aria-labelledby="dropdownLargeButton">
-                                <p class="font-bold mt-2 ml-3">Who We Are</p>
-                                <li class="flex">
-                                    <img src="./images/people.svg" alt=""><a href="Aboutus.html"
-                                        class="block px-4 py-2 hover:text-green-600">About
-                                        Us</a>
-                                </li>
-                                <li class="flex">
-                                    <img src="./images/profile-2user.svg" alt=""></i><a href="Theteam.html"
-                                        class="block px-4 py-2 hover:text-green-600">The
-                                        Team</a>
-                                </li>
-                                <li class="flex">
-                                    <img src="./images/profile-2user.svg" alt=""></i><a href="Theboard.html"
-                                        class="block px-4 py-2 hover:text-green-600">The
-                                        Board</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <li class="flex">
+                      <img src="./images/profile-2user.svg" alt=""></i><a href="Theteam.html"
+                        class="block px-4 py-2 hover:text-green-600">The
+                        Team</a>
                     </li>
-                    <li>
-                        <button id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1"
-                            class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 md:w-auto dark:text-white md:dark:hover:text-green-400 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
-                            Programs
-                            <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 1 4 4 4-4" />
-                            </svg>
-                        </button>
-                        <!-- Dropdown menu -->
-                        <div id="dropdownNavbar1"
-                            class="z-10 hidden font-normal bg-white w-[50%]  divide-y divide-gray-100  shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                            <ul class="py-2 text-sm grid gap-2 grid-cols-2 dark:text-gray-400"
-                                aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <p class="ml-2 font-bold p-2 text-[15px]">CEEC Programs</p>
-                                    <a href="Bi-annual-summit.html"
-                                        class="block px-4 py-2 mt-2 hover:text-green-600 dark:hover:bg-gray-600 dark:hover:text-white">Bi-Annual
-                                        Programs</a>
-                                </li>
-                                <li>
-                                    <p class="font-bold mt-2 ml-3 text-[12px]">Population Health Intervention Programs
-                                    </p>
-                                    <a href="Save-a-breast.html" class="block mt-5 px-4  hover:text-green-600">Save
-                                        A Breast Campaign</a>
-                                </li>
-                                <li>
-                                    <a href="ghcmd.html" class="block px-4  hover:text-green-600">Global
-                                        Health Change Makers Dialogue
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="hlsh.html" class="block px-4 hover:text-green-600">Advocacy
-                                        for Healthy Liver and Sexual Health
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="Fellowship.html" class="block px-4 hover:text-green-600">Fellowship
-                                        Programs</a>
-                                </li>
-                                <li>
-                                    <a href="Safe-space.html" class="block px-4 py-2 hover:text-green-600">Safe
-                                        Space Nigeria</a>
-                                </li>
-                                <li>
-                                    <a href="Syn-x.html" class="block px-4 p-2 hover:text-green-600">SYN-X
-                                        Project</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <li class="flex">
+                      <img src="./images/profile-2user.svg" alt=""></i><a href="Theboard.html"
+                        class="block px-4 py-2 hover:text-green-600">The
+                        Board</a>
                     </li>
-                    <li>
-                        <button id="dropdownNavbarLink2" data-dropdown-toggle="dropdownNavbar2"
-                            class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 md:w-auto dark:text-white md:dark:hover:text-green-400 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
-                            Resources
-                            <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 1 4 4 4-4" />
-                            </svg>
-                        </button>
-                        <!-- Dropdown menu -->
-                        <div id="dropdownNavbar2"
-                            class="z-10 hidden font-normal p-3 bg-white divide-y w-[40%] divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                            <ul class="py-2 text-sm text-gray-700 grid grid-cols-4 dark:text-gray-400"
-                                aria-labelledby="dropdownLargeButton">
-                                <p class="font-bold text-[15px] mt-2 ml-5">Resources</p>
-                                <li class="flex">
-                                    <img src="./images/edit.svg" alt=""> <a href="Blog.html"
-                                        class="block px-4 py-2 hover:text-green-600">Our
-                                        blog</a>
-                                </li>
-                                <li class="flex">
-                                    <img src="./images/microphone.svg" alt=""><a href="Podcast.html"
-                                        class="block px-4 py-2 hover:text-green-600">Podcast</a>
-                                </li>
-                                <li class="flex">
-                                    <img src="./images/book.svg" alt=""><a href="Trainings.html"
-                                        class="block px-4 py-2 hover:text-green-600">Trainings</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <button id="dropdownNavbarLink3" data-dropdown-toggle="dropdownNavbar3"
-                            class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 md:w-auto">
-                            Research Institute
-                            <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 1 4 4 4-4" />
-                            </svg>
-                        </button>
-                        <!-- Dropdown menu -->
-                        <div id="dropdownNavbar3"
-                            class="z-10 hidden p-3 w-[55%] font-normal bg-white divide-y divide-gray-100 shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                            <ul class="py-2 text-sm grid grid-cols-4 text-gray-700 dark:text-gray-400"
-                                aria-labelledby="dropdownLargeButton">
-                                <p class="font-bold text-[15px] mt-2 ml-5">Research Institute</p>
-                                <li class="flex ml-10">
-                                    <img src="./images/teacher.svg" alt=""><a href="faculty.html"
-                                        class="block px-2 py-2 hover:text-green-600">Faculty</a>
-                                </li>
-                                <li class="flex">
-                                    <img src="./images/book.svg" alt=""><a href="Article.html"
-                                        class="block px-2 py-2 hover:text-green-600">Publications</a>
-                                </li>
-                                <li class="flex">
-                                    <img src="./images/profile-2user.svg" alt=""><a href="institute.html"
-                                        class="block px-2 py-2 hover:text-green-600">About Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="membership.html"
-                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Join
-                            Us</a>
-                    </li>
-                    <li>
-                        <a href="Contact.html"
-                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-                    </li>
-                    <li>
-                        <a href="Donate.html"
-                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><button
-                                class="hc p-3 rounded-md text-white">
-                                Donate Now
-                            </button></a>
-                    </li>
-                </ul>
-            </div>
-
-
-
-            <!-- Mobile screen -->
-            <div class="hidden w-full md:w-auto" id="navbar-dropdown1">
-                <div class="block md:hidden" id="accordion-collapse" data-accordion="collapse">
-                    <ul>
-                        <a href="Landingpage.html" aria-current="page">
-                            <li
-                                class="p-5 text-black font-medium rounded md:bg-transparent md:p-0 dark:bg-blue-600 md:dark:bg-transparent">
-                                Home
-                            </li>
-                        </a>
-
-                        <li id="accordion-collapse-heading-1" data-accordion-target="#accordion-collapse-body-1"
-                            aria-expanded="false" aria-controls="accordion-collapse-body-1"
-                            style="background-color: white !important;">
-                            <div class="flex items-center justify-between w-full p-5 font-medium text-left">
-                                <span>Who We Are</span>
-                                <svg data-accordion-icon class="w-3 h-3 rotate-180" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M9 5 5 1 1 5" />
-                                </svg>
-                            </div>
-                            <div id="accordion-collapse-body-1" class="hidden"
-                                aria-labelledby="accordion-collapse-heading-1">
-                                <div>
-                                    <ul class="px-5">
-                                        <a href="Aboutus.html" class="block py-2 hover:text-green-600">
-                                            <li class="flex border-b-2 gap-4 py-2">
-                                                <img src="./images/people.svg" alt="">
-                                                <span>About Us</span>
-                                            </li>
-                                        </a>
-                                        <a href="Theteam.html" class="block py-2 hover:text-green-600">
-                                            <li class="flex border-b-2 gap-4 py-2">
-                                                <img src="./images/profile-2user.svg" alt="">
-                                                <span>The Team</span>
-                                            </li>
-                                        </a>
-                                        <a href="Theboard.html" class="block py-2 hover:text-green-600">
-                                            <li class="flex border-b-2 gap-4 py-2">
-                                                <img src="./images/profile-2user.svg" alt="">
-                                                <span>The Board</span>
-                                            </li>
-                                        </a>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li id="accordion-collapse-heading-2" data-accordion-target="#accordion-collapse-body-2"
-                            aria-expanded="false" aria-controls="accordion-collapse-body-2"
-                            style="background-color: white !important;">
-                            <div class="flex items-center justify-between w-full p-5 font-medium text-left">
-                                <span>Programs</span>
-                                <svg data-accordion-icon class="w-3 h-3 rotate-180" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M9 5 5 1 1 5" />
-                                </svg>
-                            </div>
-                            <div id="accordion-collapse-body-2" class="hidden"
-                                aria-labelledby="accordion-collapse-heading-2">
-                                <div>
-                                    <ul class="px-5">
-                                        <li>
-                                            <p class="ml-2 font-bold p-2 text-normal">CEEC Programs</p>
-                                            <a href="Bi-annual-summit.html"
-                                                class="block px-4 py-2 mt-2 hover:text-green-600 border-b-2 dark:hover:bg-gray-600 dark:hover:text-white">Bi-Annual
-                                                Programs</a>
-                                        </li>
-                                        <li>
-                                            <a href="ghcmd.html"
-                                                class="block py-2 px-4 hover:text-green-600 border-b-2">Global
-                                                Health Change Makers Dialogue
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="Fellowship.html"
-                                                class="block py-2 px-4 hover:text-green-600 border-b-2">Fellowship
-                                                Programs</a>
-                                        </li>
-                                        <li>
-                                            <a href="Syn-x.html"
-                                                class="block px-4 p-2 hover:text-green-600 border-b-2">SYN-X
-                                                Project</a>
-                                        </li>
-
-                                        <li>
-                                            <p class="font-bold mt-5 ml-3 text-normal">Population Health Intervention
-                                                Programs</p>
-                                            <a href="Save-a-breast.html"
-                                                class="block mt-5 px-4 py-2 hover:text-green-600 border-b-2">Save
-                                                A Breast Campaign</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="hlsh.html"
-                                                class="block px-4 py-2 hover:text-green-600 border-b-2">Advocacy
-                                                for Healthy Liver and Sexual Health
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="Safe-space.html"
-                                                class="block px-4 py-2 hover:text-green-600 border-b-2">Safe
-                                                Space Nigeria</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li id="accordion-collapse-heading-3" data-accordion-target="#accordion-collapse-body-3"
-                            aria-expanded="false" aria-controls="accordion-collapse-body-3"
-                            style="background-color: white !important;">
-                            <div class="flex items-center justify-between w-full p-5 font-medium text-left">
-                                <span>Resources</span>
-                                <svg data-accordion-icon class="w-3 h-3 rotate-180" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M9 5 5 1 1 5" />
-                                </svg>
-                            </div>
-                            <div id="accordion-collapse-body-3" class="hidden"
-                                aria-labelledby="accordion-collapse-heading-3">
-                                <div>
-                                    <ul class="px-5">
-                                        <a href="Blog.html" class="block py-2 hover:text-green-600">
-                                            <li class="flex border-b-2 gap-4 py-2">
-                                                <img src="./images/edit.svg" alt="">
-                                                <span>Our Blog</span>
-                                            </li>
-                                        </a>
-                                        <a href="Podcast.html" class="block py-2 hover:text-green-600">
-                                            <li class="flex border-b-2 gap-4 py-2">
-                                                <img src="./images/microphone.svg" alt="">
-                                                <span>Our Podcast</span>
-                                            </li>
-                                        </a>
-                                        <a href="Trainings.html" class="block py-2 hover:text-green-600">
-                                            <li class="flex border-b-2 gap-4 py-2">
-                                                <img src="./images/book.svg" alt="">
-                                                <span>Trainings</span>
-                                            </li>
-                                        </a>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li id="accordion-collapse-heading-4" data-accordion-target="#accordion-collapse-body-4"
-                            aria-expanded="false" aria-controls="accordion-collapse-body-4"
-                            style="background-color: white !important;">
-                            <div
-                                class="flex items-center justify-between w-full p-5 font-medium text-left focus:bg-white">
-                                <span>Research Institute</span>
-                                <svg data-accordion-icon class="w-3 h-3 rotate-180" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M9 5 5 1 1 5" />
-                                </svg>
-                            </div>
-                            <div id="accordion-collapse-body-4" class="hidden"
-                                aria-labelledby="accordion-collapse-heading-4">
-                                <div>
-                                    <ul class="px-5">
-                                        <a href="faculty.html" class="block py-2 hover:text-green-600">
-                                            <li class="flex border-b-2 gap-4 py-2">
-                                                <img src="./images/teacher.svg" alt="">
-                                                <span>Faculty</span>
-                                            </li>
-                                        </a>
-                                        <a href="Article.html" class="block py-2 hover:text-green-600">
-                                            <li class="flex border-b-2 gap-4 py-2">
-                                                <img src="./images/book.svg" alt="">
-                                                <span>Publications</span>
-                                            </li>
-                                        </a>
-                                        <a href="institute.html" class="block py-2 hover:text-green-600">
-                                            <li class="flex border-b-2 gap-4 py-2">
-                                                <img src="./images/profile-2user.svg" alt="">
-                                                <span>About Us</span>
-                                            </li>
-                                        </a>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <a href="membership.html" aria-current="page">
-                            <li
-                                class="p-5 text-black font-medium rounded md:bg-transparent md:p-0 dark:bg-blue-600 md:dark:bg-transparent">
-                                Join Us
-                            </li>
-                        </a>
-                        <a href="Contact.html" aria-current="page">
-                            <li
-                                class="p-5 text-black font-medium rounded md:bg-transparent md:p-0 dark:bg-blue-600 md:dark:bg-transparent">
-                                Contact
-                            </li>
-                        </a>
-                        <li class="px-5">
-                            <a href="Donate.html"
-                                class="py-5 text-gray-900 box-content rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                                <button class="hc p-5 rounded text-normal md:p-3 text-white w-full">
-                                    Donate Now
-                                </button></a>
-                        </li>
-                    </ul>
+                  </ul>
                 </div>
+              </li>
+              <li>
+                <button id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1"
+                  class="flex items-center text-black justify-between w-full py-2 pl-3 pr-4 rounded dark:bg-gray-900 dark:text-white md:hover:text-green-600 md:border-0 md:p-0 md:w-auto">
+                  Programs
+                  <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 1 4 4 4-4" />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar1"
+                  class="z-10 hidden font-normal bg-white w-[50%]  divide-y divide-gray-100  shadow w-44">
+                  <ul class="py-2 text-sm grid gap-2 grid-cols-2 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <p class="ml-2 font-bold p-2 text-[15px]">CEEC Programs</p>
+                      <a href="Bi-annual-summit.html"
+                        class="block px-4 py-2 mt-2 hover:text-green-600">Bi-Annual
+                        Programs</a>
+                    </li>
+                    <li>
+                      <p class="font-bold mt-2 ml-3 text-[12px]">Population Health Intervention Programs</p>
+                      <a href="Save-a-breast.html" class="block mt-5 px-4  hover:text-green-600">Save
+                        A Breast Campaign</a>
+                    </li>
+                    <li>
+                      <a href="ghcmd.html" class="block px-4  hover:text-green-600">Global
+                        Health Change Makers Dialogue
+                      </a>
+                    </li>
+                    <li>
+                      <a href="hlsh.html" class="block px-4 hover:text-green-600">Advocacy
+                        for Healthy Liver and Sexual Health
+                      </a>
+                    </li>
+                    <li>
+                      <a href="Fellowship.html" class="block px-4 hover:text-green-600">Fellowship
+                        Programs</a>
+                    </li>
+                    <li>
+                      <a href="Safe-space.html" class="block px-4 py-2 hover:text-green-600">Safe
+                        Space Nigeria</a>
+                    </li>
+                    <li>
+                      <a href="Syn-x.html" class="block px-4 p-2 hover:text-green-600">SYN-X
+                        Project</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <button id="dropdownNavbarLink2" data-dropdown-toggle="dropdownNavbar2"
+                  class="flex items-center text-black justify-between w-full py-2 pl-3 pr-4 rounded dark:bg-gray-900 dark:text-white md:hover:text-green-600 md:border-0 md:p-0 md:w-auto">
+                  Resources
+                  <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 1 4 4 4-4" />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar2"
+                  class="z-10 hidden font-normal p-3 bg-white divide-y w-[40%] divide-gray-100 rounded-lg shadow w-44">
+                  <ul class="py-2 text-sm text-gray-700 grid grid-cols-4 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton">
+                    <p class="font-bold text-[15px] mt-2 ml-5">Resources</p>
+                    <li class="flex">
+                      <img src="./images/edit.svg" alt=""> <a href="Blog.html"
+                        class="block px-4 py-2 hover:text-green-600">Our
+                        blog</a>
+                    </li>
+                    <li class="flex">
+                      <img src="./images/microphone.svg" alt=""><a href="Podcast.html"
+                        class="block px-4 py-2 hover:text-green-600">Podcast</a>
+                    </li>
+                    <li class="flex">
+                      <img src="./images/book.svg" alt=""><a href="Trainings.html"
+                        class="block px-4 py-2 hover:text-green-600">Trainings</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <button id="dropdownNavbarLink3" data-dropdown-toggle="dropdownNavbar3"
+                  class="flex items-center text-black justify-between w-full py-2 pl-3 pr-4 rounded dark:bg-gray-900 dark:text-white md:border-0 md:hover:text-green-600 md:hover:text-green-600 md:p-0 md:w-auto">
+                  Research Institute
+                  <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 1 4 4 4-4" />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar3"
+                  class="z-10 hidden p-3 w-[55%] font-normal bg-white divide-y divide-gray-100 shadow w-44">
+                  <ul class="py-2 text-sm grid grid-cols-4 text-gray-700 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton">
+                    <p class="font-bold text-[15px] mt-2 ml-5">Research Institute</p>
+                    <li class="flex ml-10">
+                      <img src="./images/teacher.svg" alt=""><a href="faculty.html"
+                        class="block px-2 py-2 hover:text-green-600">Faculty</a>
+                    </li>
+                    <li class="flex">
+                      <img src="./images/book.svg" alt=""><a href="Article.html"
+                        class="block px-2 py-2 hover:text-green-600">Publications</a>
+                    </li>
+                    <li class="flex">
+                      <img src="./images/profile-2user.svg" alt=""><a href="institute.html"
+                        class="block px-2 py-2 hover:text-green-600">About Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="membership.html"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Join
+                  Us</a>
+              </li>
+              <li>
+                <a href="Contact.html"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+              </li>
+              <li>
+                <a href="Donate.html"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"><button
+                    class="hc p-3 rounded-md text-white">
+                    Donate Now
+                  </button></a>
+              </li>
+            </ul>
+          </div>
+    
+    
+    
+          <!-- Mobile screen -->
+          <div class="hidden w-full md:w-auto dark:bg-gray-900 dark:text-white" id="navbar-dropdown1">
+            <div class="block md:hidden" id="accordion-collapse" data-accordion="collapse">
+              <ul>
+                <a href="Landingpage.html" aria-current="page">
+                  <li
+                    class="p-5 text-black font-medium rounded md:bg-transparent md:p-0 dark:bg-gray-900 dark:text-white">
+                    Home
+                  </li>
+                </a>
+    
+                <li id="accordion-collapse-heading-1" data-accordion-target="#accordion-collapse-body-1"
+                  aria-expanded="false" aria-controls="accordion-collapse-body-1"
+                    class="bg-white dark:bg-gray-900 dark:text-white">
+                  <div class="flex items-center justify-between w-full p-5 font-medium text-left">
+                    <span>Who We Are</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 5 5 1 1 5" />
+                    </svg>
+                  </div>
+                  <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                    <div>
+                      <ul class="px-5">
+                        <a href="Aboutus.html" class="block py-2 hover:text-green-600">
+                          <li class="flex border-b-2 gap-4 py-2">
+                            <img src="./images/people.svg" alt="">
+                            <span>About Us</span>
+                          </li>
+                        </a>
+                        <a href="Theteam.html" class="block py-2 hover:text-green-600">
+                          <li class="flex border-b-2 gap-4 py-2">
+                            <img src="./images/profile-2user.svg" alt="">
+                            <span>The Team</span>
+                          </li>
+                        </a>
+                        <a href="Theboard.html" class="block py-2 hover:text-green-600">
+                          <li class="flex border-b-2 gap-4 py-2">
+                            <img src="./images/profile-2user.svg" alt="">
+                            <span>The Board</span>
+                          </li>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+    
+                <li id="accordion-collapse-heading-2" data-accordion-target="#accordion-collapse-body-2"
+                  aria-expanded="false" aria-controls="accordion-collapse-body-2"
+                  class="bg-white dark:bg-gray-900 dark:text-white">
+                  <div class="flex items-center justify-between w-full p-5 font-medium text-left">
+                    <span>Programs</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 5 5 1 1 5" />
+                    </svg>
+                  </div>
+                  <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                    <div>
+                      <ul class="px-5">
+                        <li>
+                          <p class="ml-2 font-bold p-2 text-normal">CEEC Programs</p>
+                          <a href="Bi-annual-summit.html"
+                            class="block px-4 py-2 mt-2 hover:text-green-600 border-b-2 dark:hover:bg-gray-600">Bi-Annual
+                            Programs</a>
+                        </li>
+                        <li>
+                          <a href="ghcmd.html" class="block py-2 px-4 hover:text-green-600 border-b-2">Global
+                            Health Change Makers Dialogue
+                          </a>
+                        </li>
+                        <li>
+                          <a href="Fellowship.html" class="block py-2 px-4 hover:text-green-600 border-b-2">Fellowship
+                            Programs</a>
+                        </li>
+                        <li>
+                          <a href="Syn-x.html" class="block px-4 p-2 hover:text-green-600 border-b-2">SYN-X
+                            Project</a>
+                        </li>
+    
+                        <li>
+                          <p class="font-bold mt-5 ml-3 text-normal">Population Health Intervention Programs</p>
+                          <a href="Save-a-breast.html" class="block mt-5 px-4 py-2 hover:text-green-600 border-b-2">Save
+                            A Breast Campaign</a>
+                        </li>
+    
+                        <li>
+                          <a href="hlsh.html" class="block px-4 py-2 hover:text-green-600 border-b-2">Advocacy
+                            for Healthy Liver and Sexual Health
+                          </a>
+                        </li>
+    
+                        <li>
+                          <a href="Safe-space.html" class="block px-4 py-2 hover:text-green-600 border-b-2">Safe
+                            Space Nigeria</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+    
+                <li id="accordion-collapse-heading-3" data-accordion-target="#accordion-collapse-body-3"
+                  aria-expanded="false" aria-controls="accordion-collapse-body-3"
+                  class="bg-white dark:bg-gray-900 dark:text-white">
+                  <div class="flex items-center justify-between w-full p-5 font-medium text-left">
+                    <span>Resources</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 5 5 1 1 5" />
+                    </svg>
+                  </div>
+                  <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                    <div>
+                      <ul class="px-5">
+                        <a href="Blog.html" class="block py-2 hover:text-green-600">
+                          <li class="flex border-b-2 gap-4 py-2">
+                            <img src="./images/edit.svg" alt="">
+                            <span>Our Blog</span>
+                          </li>
+                        </a>
+                        <a href="Podcast.html" class="block py-2 hover:text-green-600">
+                          <li class="flex border-b-2 gap-4 py-2">
+                            <img src="./images/microphone.svg" alt="">
+                            <span>Our Podcast</span>
+                          </li>
+                        </a>
+                        <a href="Trainings.html" class="block py-2 hover:text-green-600">
+                          <li class="flex border-b-2 gap-4 py-2">
+                            <img src="./images/book.svg" alt="">
+                            <span>Trainings</span>
+                          </li>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+    
+                <li id="accordion-collapse-heading-4" data-accordion-target="#accordion-collapse-body-4"
+                  aria-expanded="false" aria-controls="accordion-collapse-body-4"
+                  class="bg-white dark:bg-gray-900 dark:text-white">
+                  <div class="flex items-center justify-between w-full p-5 font-medium text-left focus:bg-white">
+                    <span>Research Institute</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 5 5 1 1 5" />
+                    </svg>
+                  </div>
+                  <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
+                    <div>
+                      <ul class="px-5">
+                        <a href="faculty.html" class="block py-2 hover:text-green-600">
+                          <li class="flex border-b-2 gap-4 py-2">
+                            <img src="./images/teacher.svg" alt="">
+                            <span>Faculty</span>
+                          </li>
+                        </a>
+                        <a href="Article.html" class="block py-2 hover:text-green-600">
+                          <li class="flex border-b-2 gap-4 py-2">
+                            <img src="./images/book.svg" alt="">
+                            <span>Publications</span>
+                          </li>
+                        </a>
+                        <a href="institute.html" class="block py-2 hover:text-green-600">
+                          <li class="flex border-b-2 gap-4 py-2">
+                            <img src="./images/profile-2user.svg" alt="">
+                            <span>About Us</span>
+                          </li>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <a href="membership.html" aria-current="page">
+                  <li
+                    class="p-5 text-black font-medium rounded md:bg-transparent md:p-0 dark:bg-gray-900 dark:text-white">
+                    Join Us
+                  </li>
+                </a>
+                <a href="Contact.html" aria-current="page">
+                  <li
+                    class="p-5 text-black font-medium rounded md:bg-transparent md:p-0 dark:bg-gray-900 dark:text-white">
+                    Contact
+                  </li>
+                </a>
+                <li class="px-5">
+                  <a href="Donate.html"
+                    class="py-5 text-gray-900 box-content rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0">
+                    <button class="hc p-5 rounded text-normal md:p-3 text-white w-full">
+                      Donate Now
+                    </button></a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-    </nav>
+      </nav>
 
 
     <div class="px-3 md:px-10 md:w-4/5 md:mx-auto">

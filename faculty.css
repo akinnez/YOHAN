@@ -4,9 +4,6 @@
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
 }
-.log1{
-    width: 100px;
-}
 .caab{
     font-size: 17px;
 }
@@ -15,7 +12,6 @@
 }
 .hgg{
     color: rgba(137, 140, 159, 1);
-    font-size: 10px;
 }
 .yel{
     background-color: rgba(255, 223, 51, 1);
@@ -30,8 +26,6 @@
     background-color: rgba(103, 162, 79, 1);
 }
 #con4{
-    width: 1263px;
-    height: 370px;
     background-color: whitesmoke;
 }
 .foot{
@@ -39,5 +33,4 @@
 }
 .tb{
     color: rgba(137, 140, 159, 1);
-    font-size: 10px;
 }
