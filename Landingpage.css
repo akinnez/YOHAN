@@ -5,10 +5,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.log1 {
-    width: 100px;
-}
-
 .yel {
     background-color: rgba(255, 223, 51, 1);
 }
@@ -22,8 +18,6 @@
 }
 
 #con4 {
-    width: 1263px;
-    height: 500px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url(./images/ll1.svg), lightgray 50% / cover no-repeat;
 }
 
@@ -33,81 +27,33 @@
 
 .hg {
     color: rgba(137, 140, 159, 1);
-    font-size: 12px;
 }
 
 #mid-con {
     background-color: rgba(2, 12, 79, 1);
-    width: 1263px;
-    height: 250px;
 }
 
-#pc-1,
-#pc-2,
-#pc-3 {
-    font-size: 10px;
-    font-family: 'Montserrat', sans-serif;
-    color: rgba(107, 114, 128, 1);
-    margin-top: 7px;
+#pc-1{
+    color: #6b7280;
 }
 
-#sub-p {
-    font-size: 12px;
-   font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-}
-
-.con1 {
-    width: 150px;
-    height: 130px;
-}
-
-.con2 {
-    width: 150px;
-    height: 130px;
-}
-
-.con3 {
-    width: 150px;
-    height: 130px;
-}
 .ms{
-    font-family: 'Montserrat', sans-serif;
     color:rgba(64, 66, 79, 1);
 }
 .vb{
     color:rgba(64, 66, 79, 1);
-    font-size: 10px;
-    font-family: 'Montserrat', sans-serif;
 }
 .vbb{
     color:rgba(64, 66, 79, 1);
-    font-size: 10px;
-    font-family: 'Montserrat', sans-serif;
 }
 .ty{
-    font-size: 9px;
-    font-family: 'Montserrat', sans-serif;
     color:  rgba(137, 140, 159, 1);
 }
 .bbn{
     background-color: rgba(255, 254, 250, 1);
-    height: 600px;
 }
 .kk{
     color:  rgba(137, 140, 159, 1);
-}
-#btn-don2{
-    height: 35px;
-    width: 120px;
-}
-#btn-don{
-    height: 28px;
-    width: 85px;
-}
-#btn-don3{
-    height: 35px;
-    width: 85px;
 }   
 .hb{
     color: rgba(103, 162, 79, 1);
@@ -115,16 +61,6 @@
 .hc{
     background-color: rgba(103, 162, 79, 1);
 }
-.caa{
-    font-size: 14px;
-}
-.caab{
-    font-size: 17px;
-}
 .hgg{
     color: rgba(137, 140, 159, 1);
-    font-size: 10px;
-}
-.ddt{
-    font-size: 9px;
 }
